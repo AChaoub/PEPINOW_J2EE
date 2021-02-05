@@ -12,7 +12,7 @@ public class Singleton {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/SGBD_Auteur","root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/SGBD_plantes","root", "");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

@@ -1,6 +1,6 @@
 package DAO;
 
-import com.octest.beans.Auteur;
+import com.octest.beans.Plante;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -9,32 +9,34 @@ public class DAOTesting {
     public static void main(String[] args) throws SQLException {
         // TODO Auto-generated method stub
 
-        AuteurServices serviceDAO = new AuteurServices ();
-        Auteur a1 =new Auteur("CHAOUB","Achraf",true) ;
-        Auteur a2 =new Auteur("LAYLI","Abdo",false) ;
+        PlantesServices serviceDAO = new PlantesServices();
+       //Plante p1 =new Plante("Photinia Fraseri Red Robin",100) ;
+        // /Plante p2 =new Plante("Quercus Ilex",120) ;
 
-        //serviceDAO.ajouterAuteur(a1);
-        //serviceDAO.ajouterAuteur(a2);
+        //serviceDAO.ajouterPlante(p1);
+       // serviceDAO.ajouterPlante(p2);
 
-        /*
+/*
         // test Ok
-        ArrayList<Auteur> liste = serviceDAO.afficherAuteurs();
-        for(int  i = 0 ;i<liste.size();i++){
+        ArrayList<Plante> liste = serviceDAO.afficherPlantes();
+        for(int i = 0; i< ((ArrayList) liste).size(); i++){
             System.out.println(liste.get(i).toString());
         }
 
         // test Ok
-        ArrayList<Auteur> auteurX = serviceDAO.chercherAuteur("C");
-        for(int  i = 0 ;i<auteurX.size();i++){
-            System.out.println(auteurX.get(i).toString());
-        }*/
+        ArrayList<Plante> PlanteX = serviceDAO.chercherPlante("Ph");
+        for(int i = 0; i<  PlanteX.size(); i++){
+            System.out.println(PlanteX.get(i).toString());
+        }
+*/
+
 
 
         // test Ok
-        //serviceDAO.supprimerAuteur(9);
+        //serviceDAO.supprimerPlante(2);
 
         //test Ok
-        System.out.println(serviceDAO.recupererAuteurParID(8));
+        //System.out.println(serviceDAO.recupererPlanteParID(1));
 
 
 

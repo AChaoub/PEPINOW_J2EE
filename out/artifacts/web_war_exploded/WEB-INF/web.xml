@@ -5,23 +5,74 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
            version="3.0">
 
+
+
     <servlet>
-        <servlet-name>Test</servlet-name>
+        <servlet-name>Acceuil</servlet-name>
         <servlet-class>com.octest.servlets.Servlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Test</servlet-name>
-        <url-pattern>/bonjour</url-pattern>
+        <servlet-name>Acceuil</servlet-name>
+        <url-pattern>/acc</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Accueil</servlet-name>
+        <servlet-name>Chercher</servlet-name>
+        <servlet-class>com.octest.servlets.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Chercher</servlet-name>
+        <url-pattern>/chercher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Recuperer</servlet-name>
+        <servlet-class>com.octest.servlets.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Recuperer</servlet-name>
+        <url-pattern>/recup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Suppression</servlet-name>
+        <servlet-class>com.octest.servlets.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Suppression</servlet-name>
+        <url-pattern>/supp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Ajouter</servlet-name>
+        <servlet-class>com.octest.servlets.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Ajouter</servlet-name>
+        <url-pattern>/ajouter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Acc</servlet-name>
         <servlet-class>com.octest.servlets.Servlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Accueil</servlet-name>
+        <servlet-name>Acc</servlet-name>
         <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Page</servlet-name>
+        <servlet-class>com.octest.servlets.Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Page</servlet-name>
+        <url-pattern>/page</url-pattern>
     </servlet-mapping>
 
 </web-app>
